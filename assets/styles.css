@@ -269,4 +269,20 @@ html{
     font-size: 1.3rem;
     line-height: 1.5rem;
   }
+
+  .contact{
+    height: fit-content;
+  }
+
+  .contactinfo{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .contact-container{
+    min-height: auto;
+    line-height: 2rem;
+  }
+
 }
