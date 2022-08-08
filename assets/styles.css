@@ -101,12 +101,14 @@
 
 /* Projects */
 .projects-container{
-    min-height: 100px;
+    display: flex;
+    height: auto;
 }
 
 .project-panel{
-    width: 48%;
-    display: inline-block;
+    min-width: 25rem;
+    height: 25rem;
+    padding: 0 1rem 3rem 1rem;
     align-items: center;
     text-align: center;
 }
@@ -117,6 +119,7 @@
 
 .project-image{
   max-height: 18rem;
+  min-height: 15rem;
 }
 
 .image-container{
@@ -137,6 +140,8 @@
   width: fit-content;
   margin: 2rem;
 }
+
+
 
 .skill-item{
   margin-right: 0.5rem;
@@ -205,4 +210,63 @@ body{
 
 html{
   scroll-padding-top: 7rem;
+}
+
+@media only screen and (max-width: 940px) {
+  .projects-container{
+    flex-wrap: wrap;
+  }
+
+  body{
+    margin: 10rem 0 0 0;
+  } 
+
+}
+
+@media only screen and (max-width: 440px) {
+  .project-image{
+    min-height: 10rem;
+    max-height: 15rem;
+  }
+
+  .project-panel{
+    display: flex;
+    flex-direction: column;
+    min-width: 0rem;
+    max-width: auto;
+    height: auto;
+    align-items: center;
+  }
+
+  .project-desc{
+    width: 15rem;
+  }
+
+  .navitems{
+    display: none;
+  }
+
+  .header{
+    justify-content: center;
+  }
+
+  .skills-container{
+    flex-wrap: wrap;
+  }
+
+  #self-portrait {
+    border-radius: 50%;
+    height: 6rem;
+    width: 6rem;
+    object-fit: cover;
+  }
+
+  .about-container{
+    align-items: center;
+  }
+
+  p{
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+  }
 }
