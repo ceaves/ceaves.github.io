@@ -193,3 +193,6 @@ body{
     background-color: #FFFAF1;
 }
 
+html{
+  scroll-padding-top: 7rem;
+}
