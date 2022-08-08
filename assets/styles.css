@@ -125,12 +125,21 @@
 
 /* Skills */
 .skills-container{
-  min-height: 100px;
+  display: flex;
+  flex-direction: inline;
+  justify-content: center;
 }
 
 .skill-panel{
-  width: 48%;
-  display: inline-block;
+  display: flex;
+  flex-direction: inline-flex;
+  align-items: center;
+  width: fit-content;
+  margin: 2rem;
+}
+
+.skill-item{
+  margin-right: 0.5rem;
 }
 
 /* Contact */
