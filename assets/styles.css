@@ -86,9 +86,10 @@
 }
 
 .description{
+  display: flex;
   line-height: 100%;
-  vertical-align: middle;
   top: 4rem;
+  align-items: center;
 }
 
 #self-portrait {
