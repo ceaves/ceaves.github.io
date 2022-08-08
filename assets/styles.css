@@ -60,12 +60,12 @@
   padding-left: 1rem;
 }
 
-.navitems a{
+ a{
   text-decoration: none;
   color: black;
 }
 
-.navitems a:hover{
+ a:hover{
   color: grey;
   cursor: pointer;
 }
