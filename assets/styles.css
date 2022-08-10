@@ -102,12 +102,14 @@
 /* Projects */
 .projects-container{
     display: flex;
-    height: auto;
+    height: fit-content;
+    overflow: scroll;
+    
 }
 
 .project-panel{
     min-width: 25rem;
-    height: 25rem;
+    height: auto;
     padding: 0 1rem 3rem 1rem;
     align-items: center;
     text-align: center;
@@ -220,6 +222,17 @@ html{
   scroll-padding-top: 7rem;
 }
 
+@media only screen and (min-width: 2550px){
+  p{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  h1{
+    font-size: 1.5rem;
+  }
+}
+
 @media only screen and (max-width: 940px) {
   .projects-container{
     flex-wrap: wrap;
@@ -227,8 +240,7 @@ html{
 
   body{
     margin: 10rem 0 0 0;
-  } 
-
+  }
 }
 
 @media only screen and (max-width: 440px) {
