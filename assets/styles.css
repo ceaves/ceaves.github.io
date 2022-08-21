@@ -99,6 +99,10 @@
   object-fit: cover;
 }
 
+#self-portrait:hover{
+  cursor:crosshair;
+}
+
 /* Projects */
 .projects-container{
     display: flex;
@@ -268,13 +272,6 @@ html{
 
   .header{
     justify-content: center;
-  }
-
-  #self-portrait {
-    border-radius: 50%;
-    height: 6rem;
-    width: 6rem;
-    object-fit: cover;
   }
 
   .about-container{
